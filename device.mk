@@ -100,6 +100,11 @@ PRODUCT_PACKAGES += \
         Nfc \
         Tag
 
+# LED
+PRODUCT_PROPERTY_OVERRIDES += \
+        persist.sys.led-brightness=31 \
+        persist.sys.enable-charging-led=1
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
         LiveWallpapers \
